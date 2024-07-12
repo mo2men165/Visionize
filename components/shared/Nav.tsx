@@ -8,16 +8,16 @@ import NavItems from "./NavItems"
 const Header = () => {
   return (
     <header className="w-full ">
-      <div className="wrapper flex items-center justify-between">
+      <div className=" wrapper flex items-center justify-between">
         <Link href="/" className="w-36">
           <Image 
-            src="/assets/logo.png" width={120} height={38}
+            src="/assets/logo.png" width={100} height={38}
             alt="Visionize"
           />
         </Link>
 
         <SignedIn>
-          <nav className="md:flex-between hidden w-full max-w-xs">
+          <nav className="md:flex-between hidden">
           <NavItems />
           </nav>
         </SignedIn>

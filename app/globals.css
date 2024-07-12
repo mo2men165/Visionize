@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -25,14 +27,14 @@
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84.2% 60.35%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.35rem;
   }
 
   .dark {
@@ -52,7 +54,7 @@
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted-foreground: 215 20.35% 65.1%;
 
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
@@ -74,7 +76,44 @@
 }
 
 body {
-  font-family: var(--font-poppins)
+    font-family: var(--font-poppins)
+}
+
+.eye-container:hover .eye, .eye-container:hover .eye-text, .eye-container:hover .arrow {
+  color: white;
+}
+.glaucoma:hover {
+  background-image: url('../public/assets/istockphoto-1450677491-612x612.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: scale(1.07);
+}
+.cataract:hover {
+  background-image: url('../public/assets/EyeDoctor_1.jpg');
+  transform: scale(1.07);
+}
+.dr:hover {
+  background-image: url('../public/assets/eye-exam-optometry-consultation-woman-test-medical-healthcare-vision-with-muslim-expert-eyes-check-consulting-senior-person-professional-optometrist-with-phoropter-machine_590464-155999.avif');
+  transform: scale(1.07);
+}
+.eye-container:hover .layer {
+  background-color: rgba(181,65,138,0.8);
+}
+.layer {
+  background-color: none;
+}
+.eye-container, .arrow {
+  transition: all 0.35s;
+}
+.eye {
+  color: #00E1B7;
+  transition: all 0.35s;
+}
+
+
+::selection {
+  background-color: #6C5BF5; 
+  color: #ffffff; 
 }
 
 .filter-grey {

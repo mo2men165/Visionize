@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Nav from "@/components/shared/Nav";
 import Footer from "@/components/shared/Footer";
+import { Toaster } from "react-hot-toast";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ['400', '500', '600', '700'], variable: '--font-poppins' });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <html lang="en">
       <body className={poppins.variable}>
           <Nav />
+          <Toaster />
           {children}
           <Footer />
         </body>

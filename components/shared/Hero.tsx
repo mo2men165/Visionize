@@ -9,8 +9,8 @@ const Hero = () => {
       <div className='flex justify-between items-center h-[100%] wrapper flex-col xl:flex-row'>
       <div>
         <h1 className='text-[#274760] hero_text max-w-[710px]'>Your partner in health and wellness</h1>
-        <p className='max-w-[600px] hero-subtext'>Visionize is an AI powered software, built with mdoern, state-of-the-art machine learning techniques. Visionize is created to help with classifying certain eye diseases (Glaucoma, Cataracts and, diabetic retinopathy) by analyzing fundus images.</p>
-        <a href="#diagnosis">
+        <p className='max-w-[600px] hero-subtext'>Visionize is an AI powered software, built with modern, state-of-the-art machine learning techniques. Visionize is created to help with classifying certain eye diseases (Glaucoma, Cataracts and, diabetic retinopathy) by analyzing fundus images.</p>
+        <a href="/diagnosis">
         <Button className='mt-5 px-7 py-9 text-md rounded-[70px]'>Upload your image now</Button>
         </a>
       </div>
